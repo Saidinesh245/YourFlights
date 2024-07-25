@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "YourFlights",
+			"path": "."
+		},
+		{
+			"name": "assets",
+			"path": "../../../Desktop/Projects/YourFlights/assets"
+		}
+	],
+	"settings": {}
+}
