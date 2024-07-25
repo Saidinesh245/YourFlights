@@ -1,0 +1,247 @@
+*{
+    font-family: "Rubik", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.bg{
+    background-image: url(assets/back5.jpg);
+    height: 100vh;
+    width: 100vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    width: 100vw; 
+}
+
+header nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1.5em;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo span{
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+
+.logo img{
+    height: inherit;
+    width: 35px;
+    margin-right: 10px;
+    overflow-y: px;
+}
+
+#sign-in-button {
+    padding: 10px;
+    font-size: 20px;
+    border: solid transparent;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+}
+
+#sign-in-button:hover{
+    cursor: pointer;
+    background-color: rgb(214, 0, 0);
+}
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.caption{
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.forms-container{
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 32px 5px rgba(0,0,0,0.1);
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction:column;
+}
+
+.parameters-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.class-status{
+    position: relative;
+    background-color: #ffffff;
+    font-size: 20px ;
+    font-weight: 400;
+    border-radius: 7px;
+    padding: 5px;
+    border: solid 2px transparent; 
+}
+
+.class-status:hover{
+    cursor: pointer;
+}
+
+.radio-trip {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 250px;
+  font-size: 14px;
+}
+
+.radio-trip .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-trip .radio input {
+  display: none;
+}
+
+.radio-trip .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgb(0, 0, 0);
+  transition: all .1s ease;
+}
+
+.radio-trip .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 450;
+}
+
+.main-form{
+    margin-top: 4%;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.main-form > span{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.location-input-boxes , .date-input-boxes{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date-input-boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input-box{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.input-box >span{
+    margin-left: 7px;
+    color: #b5b5b5;
+}
+
+.main-form input{
+    font-size: 1.2em;
+    padding: 0.7rem;
+    margin: 5px;
+    /* border-radius: 5px; */
+    border:none ;
+    border-bottom: solid 1.5px #c4c4c4;
+    width: 80%;
+}
+
+.main-form input:focus{
+    outline: none;
+    border:none ;
+    border-bottom: solid 1.5px rgb(0, 0, 0);
+    width: 80%;
+}
+
+#search-button{
+    font-size: 1em;
+    padding: 0.9rem;
+    margin: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 8%;
+    min-width: 80px ;
+}
+
+#search-button:hover{
+    cursor: pointer;
+    background-color: rgb(214, 0, 0);
+}
+
+#swap{
+   cursor: pointer;
+   background-color: transparent;
+   border: 2px solid transparent;
+   height: fit-content;
+   padding: 5px;
+   border-radius: 4px;
+   /* margin-right: 15px; */
+}
+
+#swap:hover{
+    background-color: #e3e1e1
+}
+
+#swap img{
+    height:inherit;
+    width: 2em;
+}
+
