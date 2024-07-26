@@ -4,25 +4,34 @@
     margin: 0;
 }
 
-.bg{
-    background-image: url(assets/back5.jpg);
-    height: 100vh;
-    width: 100vw; 
+body{
+    /* background-image: url(assets/back5.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
-    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    width: 100%;
 }
 
-header nav{
+nav{
+    width: 100vw;
     display: flex;
     justify-content:space-between;
     align-items: center;
     padding: 1.5em;
     background-color: black;
+    position: fixed;
+}
+
+nav div, nav button{
+    margin: 0 25px;
 }
 
 .logo{
@@ -67,15 +76,18 @@ body{
 
 .main-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 600px;
+    height: 100%;
+    padding: 7vw;
 }
 
 .caption{
     font-size: 4em;
     font-weight: 500;
+    margin: 30px 0px;
+    margin-top: 100px;
 }
 
 .forms-container{
@@ -88,6 +100,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-direction:column;
+    margin: 40px 0px;
 }
 
 .parameters-form{
@@ -99,10 +112,10 @@ body{
 }
 
 .class-status{
-    position: relative;
+    /* position: relative; */
     background-color: #ffffff;
     font-size: 20px ;
-    font-weight: 400;
+    font-weight: 425;
     border-radius: 7px;
     padding: 5px;
     border: solid 2px transparent; 
@@ -113,7 +126,7 @@ body{
 }
 
 .radio-trip {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -243,5 +256,85 @@ body{
 #swap img{
     height:inherit;
     width: 2em;
+}
+
+footer {
+    margin-top: 70px;
+    width: 100vw;
+    height: 250px;
+    background-color: black;
+}
+
+/* Flights information styles */
+
+.sub-heading-flights-container{
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    margin-top: 0.5em;
+    font-weight: 425;
+}
+
+.flights-main-container{
+    background-color: white;
+    margin: 40px 0px;
+    width: 75vw;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 32px 5px rgba(23, 21, 21, 0.1);
+}
+
+.flights-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flight-info-container{
+    list-style-type: none;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 2px solid #EEE;
+}
+
+.flight-info-container:hover{
+    background-color: #e9e9e9;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#flight-logo{
+    height: 30px;
+    width: 30px;
+}
+
+.details-1, .details-2, .details-3{
+    display: flex;
+    height: 50px;
+    align-items: right;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.departing-and-arriving-times, .duration, .no-of-stops{
+    font-size: 1.2em;
+    font-weight: 425;
+}
+
+.airline-name, .departing-and-arriving-airport-codes, .stopping-airports{
+    color:#878787;
+}
+
+.price{
+    font-size: 1.2em;
+    font-weight: 425;
+    color: green;
 }
 

@@ -19,48 +19,126 @@
         </nav>
     </header>
 
-    <div class="bg">
-        <div class="main-container">
-            <span class="caption">Where Are You Headed?</span>
-            
-                <div class="forms-container" id="forms-container">
-                    <div class="parameters-form">
-                        <select class="class-status"> 
-                            <option value="economy">Economy</option>
-                            <option value="business">Business</option>
-                            <option value="first">First</option>
-                        </select>
-                        <div class="radio-trip">
-                            <label class="radio">
-                                <input type="radio" value="round-trip" name="trip" id="round-trip" checked="">
-                                <span class="name">Round-trip</span>
-                            </label>
-                            <label class="radio">
-                                <input type="radio" value="one-way" name="trip" id="one-way">
-                                <span class="name">One-way</span>
-                            </label>
-                        </div> 
+    <div class="main-container">
+        <span class="caption">Where Are You Headed?</span>
+        
+        <div class="forms-container" id="forms-container">
+            <div class="parameters-form">
+                <select class="class-status"> 
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first">First</option>
+                </select>
+                <div class="radio-trip">
+                    <label class="radio">
+                        <input type="radio" value="round-trip" name="trip" id="round-trip" checked="">
+                        <span class="name">Round-trip</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" value="one-way" name="trip" id="one-way">
+                        <span class="name">One-way</span>
+                    </label>
+                </div> 
+            </div>
+            <div class="main-form">
+                <span>
+                    <div class="location-input-boxes">
+                        <div class="input-box"><span>From</span><input type="text" id="departing-airport" placeholder=""></div>
+                        <button id="swap" onclick="swapAirports()"><img src="assets/swap.png"/></button>
+                        <div class="input-box"><span>To</span><input type="text" id="arrival-airport" placeholder=""></div>
                     </div>
-                    <div class="main-form">
-                        <span>
-                            <div class="location-input-boxes">
-                                <div class="input-box"><span>From</span><input type="text" id="departing-airport" placeholder=""></div>
-                                <button id="swap" onclick="swapAirports()"><img src="assets/swap.png"/></button>
-                                <div class="input-box"><span>To</span><input type="text" id="arrival-airport" placeholder=""></div>
-                            </div>
-                               
-                            <div class="date-input-boxes">
-                                <div class="input-box"><span>Depart</span><input id="departure-date" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" ></div>
-                                <div class="input-box" id="arrive-input-box"><span>Arrive</span><input id="arrival-date" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"></div>
-                            </div>
-                        </span>
-                        <br>
-                    <button id="search-button" onclick="searchFlights()"> Search</button>
+                        
+                    <div class="date-input-boxes">
+                        <div class="input-box"><span>Depart</span><input id="departure-date" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" ></div>
+                        <div class="input-box" id="arrive-input-box"><span>Arrive</span><input id="arrival-date" name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"></div>
                     </div>
-                </div>
-            
+                </span>
+                <br>
+            <button id="search-button" onclick="searchFlights()"> Search</button>
+            </div>
+        </div>
+
+        <div class="flights-main-container">
+                <!-- prolly have to change for a single way trip -->
+            <div class="sub-heading-flights-container">Best Departing Flights</div> 
+
+            <ul class="flights-list">
+                <li class="flight-info-container">
+                    <img id="flight-logo" src="assets/flight-logo.png"/>
+                    <div class="details-1">
+                        <div class="departing-and-arriving-times">10:10 PM - 7:10 PM</div>
+                        <div class="airline-name">Air Canada</div>
+                    </div>
+                    <div class="details-2">
+                        <div class="duration">13 hr 10 min</div>
+                        <div class="departing-and-arriving-airport-codes">YYZ-DXB</div>
+                    </div>
+                    <div class="details-3">
+                        <div class="no-of-stops">1 stop</div>
+                        <div class="stopping-airports">7hr FCO</div>
+                    </div>
+                    <div class="price">CA$393</div>
+                </li>
+
+                <li class="flight-info-container">
+                    <img id="flight-logo" src="assets/flight-logo.png"/>
+                    <div class="details-1">
+                        <div class="departing-and-arriving-times">10:10 PM - 7:10 PM</div>
+                        <div class="airline-name">Air Canada</div>
+                    </div>
+                    <div class="details-2">
+                        <div class="duration">13 hr 10 min</div>
+                        <div class="departing-and-arriving-airport-codes">YYZ-DXB</div>
+                    </div>
+                    <div class="details-3">
+                        <div class="no-of-stops">1 stop</div>
+                        <div class="stopping-airports">7hr FCO</div>
+                    </div>
+                    <div class="price">CA$393</div>
+                </li>
+
+                <li class="flight-info-container">
+                    <img id="flight-logo" src="assets/flight-logo.png"/>
+                    <div class="details-1">
+                        <div class="departing-and-arriving-times">10:10 PM - 7:10 PM</div>
+                        <div class="airline-name">Air Canada</div>
+                    </div>
+                    <div class="details-2">
+                        <div class="duration">13 hr 10 min</div>
+                        <div class="departing-and-arriving-airport-codes">YYZ-DXB</div>
+                    </div>
+                    <div class="details-3">
+                        <div class="no-of-stops">1 stop</div>
+                        <div class="stopping-airports">7hr FCO</div>
+                    </div>
+                    <div class="price">CA$393</div>
+                </li>
+
+                <li class="flight-info-container">
+                    <img id="flight-logo" src="assets/flight-logo.png"/>
+                    <div class="details-1">
+                        <div class="departing-and-arriving-times">10:10 PM - 7:10 PM</div>
+                        <div class="airline-name">Air Canada</div>
+                    </div>
+                    <div class="details-2">
+                        <div class="duration">13 hr 10 min</div>
+                        <div class="departing-and-arriving-airport-codes">YYZ-DXB</div>
+                    </div>
+                    <div class="details-3">
+                        <div class="no-of-stops">1 stop</div>
+                        <div class="stopping-airports">7hr FCO</div>
+                    </div>
+                    <div class="price">CA$393</div>
+                </li>
+
+                
+            </ul>
         </div>
     </div>
+
+    <footer>
+        hello
+    </footer>
   </body>
 </html>
 
