@@ -21,3 +21,7 @@ function swapAirports(){
     departingAirport.value = arrivalAirport.value;
     arrivalAirport.value = tempValue; 
 }
+
+function searchFlights(){
+    
+}

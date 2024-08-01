@@ -15,7 +15,7 @@
     <header>
         <nav>
             <div class="logo"><img src="assets/logo-plane.png"/><span>YourFlights</span></div>
-            <button id="sign-in-button"> Sign in</button>
+            <button id="sign-in-button" onclick="searchFlights()"> Sign in</button>
         </nav>
     </header>
 
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div class="flights-main-container">
+        <div class="flights-main-container" id="flight-results">
                 <!-- prolly have to change for a single way trip -->
             <div class="sub-heading-flights-container">Best Departing Flights</div> 
 
