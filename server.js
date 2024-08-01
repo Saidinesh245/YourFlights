@@ -32,7 +32,7 @@ const server = createServer(async (req, res) => {
                 travel_class: travel_class, 
                 currency: "USD",
                 hl: "en",
-                api_key: "145836cfc23d63354c5b75dd4764e743732afcc659835902d4a21c9afcc351b0"
+                api_key: "****"
             });
         
             res.statusCode = 200;
